@@ -1,0 +1,65 @@
+<html>
+<head>
+    <link rel="stylesheet" href="scientific-calculator.css">
+    <script src="scientific-calculator.js"></script>
+    <title>Scientific calculator</title>
+</head>
+<body>
+    <p id="para"></p>
+    <table>
+        <tr>
+            <td colspan=5><input id=result readonly></td>
+        </tr>
+        <tr>
+            
+            <td onclick="tri(sin)">sin</td>
+            <td onclick="tri(cos)">cos</td>
+            <td onclick="tri(tan)">tan</td>
+            <td onclick="pi_e('pi')">&#x03C0;</td>
+            <td onclick="log(1)">log</td>
+        </tr>
+        <tr>
+            <td onclick="trigo(sin)">sin<sup>-1</sup></td>
+            <td onclick="trigo(cos)">cos<sup>-1</sup></td>
+            <td onclick="tirgo(tan)">tan<sup>-1</sup></td>
+            <td onclick="pi_e('e')">e</td>
+            <td onclick="">ln</td>
+        </tr>
+        <tr>
+            <td onclick="input('^(')">^</td>
+            <td onclick="get().value+='Math.sqrt('">sqrt</td>
+            <td onclick="input('(')">(</td>
+            <td onclick="input(')')">)</td>
+            <td onclick="input('|')">|x|</td>
+        </tr>
+        <tr>
+            <td onclick="input('7')">7</td>
+            <td onclick="input('8')">8</td>
+            <td onclick="input('9')">9</td>
+            <td onclick="del()">DEL</td>
+            <td onclick="ac()">AC</td>
+        </tr>
+        <tr>
+            <td onclick="input('4')">4</td>
+            <td onclick="input('5')">5</td>
+            <td onclick="input('6')">6</td>
+            <td onclick="input('*')">&#x00D7;</td>
+            <td onclick="input('/')">&#x00F7;</td>
+        </tr>    
+        <tr>
+            <td onclick="input('1')">1</td>
+            <td onclick="input('2')">2</td>
+            <td onclick="input('3')">3</td>
+            <td onclick="input('+')">+</td>
+            <td onclick="input('-')">-</td>
+        </tr>
+        <tr>
+            <td onclick="input('0')">0</td>
+            <td onclick="input('.')">.</td>
+            <td onclick="">!</td>
+            <td onclick="ans()">ANS</td>
+            <td onclick="calculate()">=</td>
+        </tr>
+    </table>
+</body>
+</html>
