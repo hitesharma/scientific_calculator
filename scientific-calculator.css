@@ -1,0 +1,7 @@
+table,th,td{
+    width:25; height:20; 
+    text-align: center; font-size: medium;
+    font-weight: lighter; font-style: oblique;
+    border: 1px solid #793cb3be;background-color:#6898d896;}
+td:hover{background-color: #5cddd69f;}
+input{width:100%;height:100%;border:none; font-size: large;}
