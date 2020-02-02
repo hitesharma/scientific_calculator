@@ -39,22 +39,40 @@ function pi_e(x){
         " * Math.E" : "Math.E";
     }
 }
+function sqrt(){
+    get().value+="sqrt(";
+    st+="Math.sqrt(";
+}
 function tri(x){
     if(x=="sin"){
-        get().value+='Math.sin(';
+        get().value+="sin(";
+        st+="Math.sin(";
     }
     else if(x=="cos"){
-        get().value+='Math.cos(';
+        get().value+="cos(";
+        st+="Math.cos(";
     }
     else if(x=="tan"){
-        get().value+='Math.tan(';
+        get().value+="tan(";
+        st+="Math.tan(";
     }
-}
-function cos(){
-    get().value=Math.cos(get().value);
-}
-function getp(){
-    return document.getElementById("para");
+    else if(x=="sinh"){
+        get().value+="sinh(";
+        st+="Math.sinh(";
+    }
+    else if(x=="cosh"){
+        get().value+="cosh(";
+        st+="Math.cosh(";function cos(){
+            get().value=Math.cos(get().value);
+        }
+        function getp(){
+            return document.getElementById("para");
+        }
+    }
+    else if(x=="tanh"){
+        get().value+="tanh(";
+        st+="Math.tanh(";
+    }
 }
 function get(){
     return document.getElementById("result");
